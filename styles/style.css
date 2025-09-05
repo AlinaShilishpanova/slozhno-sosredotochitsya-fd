@@ -1,30 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Сбросила отступы потому что github НЕ ПРИНИМАЕТ по-другому
-Подозреваю, что так делать не правильно, но я не понимаю как по-другому, потому что в global.css стили уже сброшены
-Подскажите, пожалуйста, как это корректно сделать и пройти тест
-
--e Исправьте ошибки:
-  -e 1. Сбросьте браузерные отступы у элементов: body.
-  make: *** [Makefile:34: test] Error 1
-  
-  app-1 exited with code 2
-  Aborting on container exit...
-   Container source-app-1  Stopping
-   Container source-app-1  Stopped
-
-Тесты завершились с ошибкой. Откройте выше вкладку Tests и исправьте ошибки.
-*/
-
 .page {
   /* сохраните в разметке и стилях класс page у тега body.
   Он удобен, чтобы составлять селекторы для разных цветовых тем.
   */
+  width: 375px;
   font-family: "IBM Plex Mono", sans-serif;
   background-image: var(--bg-image);
   background-color: var(--bg-color);
@@ -32,9 +12,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 375px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .header {
