@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+  --main-font-family: "IBM Plex Mono";
   --rec: inline;
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: rgba(0, 0, 40, 1);
@@ -12,35 +13,4 @@
   --color-title-decor: rgba(0, 0, 40, 1);
   --color-article-text: rgba(241, 178, 206, 1);
   --color-section-header: rgba(255, 0, 112, 1);
-}
-
-:root.theme-auto {
-  --rec: none;
-}
-
-@media (prefers-color-scheme: light) {
-  :root.theme-auto {
-    --bg-image: url("../images/cover-image-light.png");
-    --bg-color: rgba(255, 241, 247, 1);
-    --accent-color: rgba(255, 141, 203, 1);
-    --color: rgba(255, 194, 230, 1);
-    --color-decorated-zone: rgba(53, 52, 48, 1);
-    --color-title-decor: rgba(53, 52, 48, 1);
-    --color-article-text: rgba(53, 52, 48, 1);
-    --color-section-header: rgba(53, 52, 48, 1);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    --rec: inline;
-    --bg-image: url("../images/cover-image-dark.png");
-    --bg-color: rgba(0, 0, 40, 1);
-    --accent-color: rgba(255, 0, 112, 1);
-    --color: rgba(219, 0, 255, 1);
-    --color-decorated-zone: rgba(255, 0, 112, 1);
-    --color-title-decor: rgba(0, 0, 40, 1);
-    --color-article-text: rgba(241, 178, 206, 1);
-    --color-section-header: rgba(255, 0, 112, 1);
-  }
 }
