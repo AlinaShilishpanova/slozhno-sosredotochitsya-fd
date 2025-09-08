@@ -220,7 +220,7 @@
 .footer__title {
   color: var(--color);
   font-weight: 700;
-  font-size: 116px; /* clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Из-за этого свойства немного не совпадает по макету, т.к. по макету установлено ровно 116px */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Из-за этого свойства немного не совпадает по макету, т.к. по макету установлено ровно 116px */
   line-height: 83%;
   text-shadow: 2px 2px 0px var(--accent-color);
 }
@@ -259,7 +259,6 @@
 
   .header {
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
     min-height: 1024px;
     margin-bottom: 60px;
     padding: 20px;
@@ -383,7 +382,6 @@
   }
 
   .footer {
-    height: 100vh;
     min-height: 1024px;
     padding: 20px;
   }
@@ -404,7 +402,6 @@
 @media (width >= 1024px) {
 
   .header {
-    height: 100vh;
     min-height: 768px;
   }
 
@@ -435,7 +432,6 @@
   }
 
   .footer {
-    height: 100vh;
     min-height: 768px;
   }
 }
